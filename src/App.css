@@ -1,36 +1,64 @@
 .main {
+  height: 100vh;
+  width: 100%;
   text-align: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .my-navbar {
-  width: 30vh;
-  height: 100vh;
-  overflow: auto;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  /*border: thick solid darkslateblue;*/
 }
 
-/*.logo{*/
-/*  height: 20vh;*/
-/*  text-align: center;*/
-/*}*/
+.my-navbar-item{
+  width: 10vh;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  /*border: thick solid darkslateblue;*/
+}
 
 li {
   list-style-type: none; /* Remove bullets */
-}
-
-.project {
-  width: 100vh;
+  padding: 2vh;
 }
 
 .App-logo {
   height: 40vh;
   pointer-events: none;
+}
+
+img{
+  width: 100%;
+}
+
+.project-card {
+  border-radius: 10px;
+  margin: 6vh;
+  height: 30vh;
+  width: 55vh;
+  max-width: 90%;
+  transition: transform .4s;
+  -webkit-filter: grayscale(100%);
+  border: none;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: scale(1.2);
+  -webkit-filter: grayscale(0%);
+  overflow: hidden;
 }
